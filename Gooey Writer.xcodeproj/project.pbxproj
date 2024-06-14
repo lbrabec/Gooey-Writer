@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7093A1F2C2042CE00A9F89A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7093A1E2C2042CE00A9F89A /* ContentView.swift */; };
+		F79BF8542C1C7C4300B390D2 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = F79BF8532C1C7C4300B390D2 /* Collections */; };
+		F7B982502C1C75F200655F54 /* Gooey_WriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9824F2C1C75F200655F54 /* Gooey_WriterApp.swift */; };
+		F7B982542C1C75F300655F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B982532C1C75F300655F54 /* Assets.xcassets */; };
+		F7B982572C1C75F300655F54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B982562C1C75F300655F54 /* Preview Assets.xcassets */; };
+		F7B982612C1C766600655F54 /* vm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9825E2C1C766600655F54 /* vm.swift */; };
+		F7B982622C1C766600655F54 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9825F2C1C766600655F54 /* Writer.swift */; };
+		F7B982632C1C766600655F54 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B982602C1C766600655F54 /* util.swift */; };
+		F7B9826A2C1C768500655F54 /* diskarbiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B982652C1C768500655F54 /* diskarbiter.swift */; };
+		F7B9826C2C1C768500655F54 /* authopenwrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F7B982682C1C768500655F54 /* authopenwrapper.mm */; };
+		F7B9826D2C1C768500655F54 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B982692C1C768500655F54 /* Config.swift */; };
+		F7B982702C1C775700655F54 /* Citadel in Frameworks */ = {isa = PBXBuildFile; productRef = F7B9826F2C1C775700655F54 /* Citadel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7093A1E2C2042CE00A9F89A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7B9824C2C1C75F200655F54 /* Gooey Writer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gooey Writer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B9824F2C1C75F200655F54 /* Gooey_WriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gooey_WriterApp.swift; sourceTree = "<group>"; };
+		F7B982532C1C75F300655F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7B982562C1C75F300655F54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7B982582C1C75F300655F54 /* Gooey_Writer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gooey_Writer.entitlements; sourceTree = "<group>"; };
+		F7B9825E2C1C766600655F54 /* vm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vm.swift; sourceTree = "<group>"; };
+		F7B9825F2C1C766600655F54 /* Writer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
+		F7B982602C1C766600655F54 /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		F7B982642C1C768400655F54 /* Gooey Writer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gooey Writer-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7B982652C1C768500655F54 /* diskarbiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diskarbiter.swift; sourceTree = "<group>"; };
+		F7B982672C1C768500655F54 /* authopenwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authopenwrapper.h; sourceTree = "<group>"; };
+		F7B982682C1C768500655F54 /* authopenwrapper.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = authopenwrapper.mm; sourceTree = "<group>"; };
+		F7B982692C1C768500655F54 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7B982492C1C75F200655F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79BF8542C1C7C4300B390D2 /* Collections in Frameworks */,
+				F7B982702C1C775700655F54 /* Citadel in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7B982432C1C75F200655F54 = {
+			isa = PBXGroup;
+			children = (
+				F7B9824E2C1C75F200655F54 /* Gooey Writer */,
+				F7B9824D2C1C75F200655F54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7B9824D2C1C75F200655F54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9824C2C1C75F200655F54 /* Gooey Writer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7B9824E2C1C75F200655F54 /* Gooey Writer */ = {
+			isa = PBXGroup;
+			children = (
+				F7093A1E2C2042CE00A9F89A /* ContentView.swift */,
+				F7B982532C1C75F300655F54 /* Assets.xcassets */,
+				F7B982672C1C768500655F54 /* authopenwrapper.h */,
+				F7B982682C1C768500655F54 /* authopenwrapper.mm */,
+				F7B982692C1C768500655F54 /* Config.swift */,
+				F7B982652C1C768500655F54 /* diskarbiter.swift */,
+				F7B982642C1C768400655F54 /* Gooey Writer-Bridging-Header.h */,
+				F7B982582C1C75F300655F54 /* Gooey_Writer.entitlements */,
+				F7B9824F2C1C75F200655F54 /* Gooey_WriterApp.swift */,
+				F7B982552C1C75F300655F54 /* Preview Content */,
+				F7B982602C1C766600655F54 /* util.swift */,
+				F7B9825E2C1C766600655F54 /* vm.swift */,
+				F7B9825F2C1C766600655F54 /* Writer.swift */,
+			);
+			path = "Gooey Writer";
+			sourceTree = "<group>";
+		};
+		F7B982552C1C75F300655F54 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7B982562C1C75F300655F54 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7B9824B2C1C75F200655F54 /* Gooey Writer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B9825B2C1C75F300655F54 /* Build configuration list for PBXNativeTarget "Gooey Writer" */;
+			buildPhases = (
+				F7B982482C1C75F200655F54 /* Sources */,
+				F7B982492C1C75F200655F54 /* Frameworks */,
+				F7B9824A2C1C75F200655F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gooey Writer";
+			packageProductDependencies = (
+				F7B9826F2C1C775700655F54 /* Citadel */,
+				F79BF8532C1C7C4300B390D2 /* Collections */,
+			);
+			productName = "Gooey Writer";
+			productReference = F7B9824C2C1C75F200655F54 /* Gooey Writer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7B982442C1C75F200655F54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F7B9824B2C1C75F200655F54 = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
+				};
+			};
+			buildConfigurationList = F7B982472C1C75F200655F54 /* Build configuration list for PBXProject "Gooey Writer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7B982432C1C75F200655F54;
+			packageReferences = (
+				F7B9826E2C1C775700655F54 /* XCRemoteSwiftPackageReference "Citadel" */,
+				F79BF8522C1C7C4300B390D2 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = F7B9824D2C1C75F200655F54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7B9824B2C1C75F200655F54 /* Gooey Writer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7B9824A2C1C75F200655F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B982572C1C75F300655F54 /* Preview Assets.xcassets in Resources */,
+				F7B982542C1C75F300655F54 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7B982482C1C75F200655F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9826A2C1C768500655F54 /* diskarbiter.swift in Sources */,
+				F7B982622C1C766600655F54 /* Writer.swift in Sources */,
+				F7093A1F2C2042CE00A9F89A /* ContentView.swift in Sources */,
+				F7B9826D2C1C768500655F54 /* Config.swift in Sources */,
+				F7B982612C1C766600655F54 /* vm.swift in Sources */,
+				F7B982632C1C766600655F54 /* util.swift in Sources */,
+				F7B982502C1C75F200655F54 /* Gooey_WriterApp.swift in Sources */,
+				F7B9826C2C1C768500655F54 /* authopenwrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F7B982592C1C75F300655F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7B9825A2C1C75F300655F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F7B9825C2C1C75F300655F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gooey Writer/Gooey_Writer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gooey Writer/Preview Content\"";
+				DEVELOPMENT_TEAM = 84669KFSWH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Lukas Brabec, authopenwrapper.mm: Copyright © 2012 The Chromium OS Authors. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.lukasbrabec.Gooey-Writer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gooey Writer/Gooey Writer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F7B9825D2C1C75F300655F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gooey Writer/Gooey_Writer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gooey Writer/Preview Content\"";
+				DEVELOPMENT_TEAM = 84669KFSWH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Lukas Brabec, authopenwrapper.mm: Copyright © 2012 The Chromium OS Authors. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.lukasbrabec.Gooey-Writer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gooey Writer/Gooey Writer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7B982472C1C75F200655F54 /* Build configuration list for PBXProject "Gooey Writer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B982592C1C75F300655F54 /* Debug */,
+				F7B9825A2C1C75F300655F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B9825B2C1C75F300655F54 /* Build configuration list for PBXNativeTarget "Gooey Writer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9825C2C1C75F300655F54 /* Debug */,
+				F7B9825D2C1C75F300655F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F79BF8522C1C7C4300B390D2 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+		F7B9826E2C1C775700655F54 /* XCRemoteSwiftPackageReference "Citadel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orlandos-nl/Citadel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F79BF8532C1C7C4300B390D2 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F79BF8522C1C7C4300B390D2 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		F7B9826F2C1C775700655F54 /* Citadel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7B9826E2C1C775700655F54 /* XCRemoteSwiftPackageReference "Citadel" */;
+			productName = Citadel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F7B982442C1C75F200655F54 /* Project object */;
+}
