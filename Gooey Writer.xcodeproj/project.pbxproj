@@ -19,6 +19,7 @@
 		F7B9826C2C1C768500655F54 /* authopenwrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F7B982682C1C768500655F54 /* authopenwrapper.mm */; };
 		F7B9826D2C1C768500655F54 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B982692C1C768500655F54 /* Config.swift */; };
 		F7B982702C1C775700655F54 /* Citadel in Frameworks */ = {isa = PBXBuildFile; productRef = F7B9826F2C1C775700655F54 /* Citadel */; };
+		F7ECAFBD2DC38C8500CFF0CA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7ECAFBC2DC38C8500CFF0CA /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F7B982672C1C768500655F54 /* authopenwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authopenwrapper.h; sourceTree = "<group>"; };
 		F7B982682C1C768500655F54 /* authopenwrapper.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = authopenwrapper.mm; sourceTree = "<group>"; };
 		F7B982692C1C768500655F54 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F7ECAFBC2DC38C8500CFF0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F7B982602C1C766600655F54 /* util.swift */,
 				F7B9825E2C1C766600655F54 /* vm.swift */,
 				F7B9825F2C1C766600655F54 /* Writer.swift */,
+				F7ECAFBC2DC38C8500CFF0CA /* Info.plist */,
 			);
 			path = "Gooey Writer";
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				F7B982572C1C75F300655F54 /* Preview Assets.xcassets in Resources */,
 				F7B982542C1C75F300655F54 /* Assets.xcassets in Resources */,
+				F7ECAFBD2DC38C8500CFF0CA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

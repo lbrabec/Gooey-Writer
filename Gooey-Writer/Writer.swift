@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import AuthOpenWrapper
+
 
 func unmountDisk(device: String) throws {
     let unmountProc = Process()
@@ -19,28 +21,28 @@ func unmountDisk(device: String) throws {
 func writeToDevice(device: String, imagePath: String, progressUpdater: (Double) -> ()) {
     let BLOCK_SIZE = 1024*1024
     var bytesWritten = 0
-    
+
     guard let imageFileHandle = FileHandle(forReadingAtPath: imagePath) else {
         NSLog("Unable to upen file " + imagePath)
         return
     }
-    
+
     do {
         try unmountDisk(device: device)
-        
+
         let fd = OpenPathForReadWriteUsingAuthopen("/dev/r" + device)
-        
+
         if(fd == -1) {
             NSLog("Horrible error")
             return
         }
-        
+
         let deviceFileHandle = FileHandle(fileDescriptor: fd)
-        
+
         let imageByteCount = try imageFileHandle.seekToEnd()
         NSLog("Image size: \(imageByteCount) bytes")
         try imageFileHandle.seek(toOffset: 0)
-        
+
         while bytesWritten < imageByteCount {
             try autoreleasepool {
                 guard let data = try imageFileHandle.read(upToCount: BLOCK_SIZE) else {
@@ -56,7 +58,7 @@ func writeToDevice(device: String, imagePath: String, progressUpdater: (Double) 
         NSLog("Total bytes written: \(bytesWritten)")
         try deviceFileHandle.synchronize()
         try deviceFileHandle.close()
-        
+
         try unmountDisk(device: device)
     }
     catch {

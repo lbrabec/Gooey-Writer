@@ -1,0 +1,30 @@
+module(
+    name = "gooey_writer",
+    version = "1.0",
+)
+
+bazel_dep(name = "rules_apple", version = "3.20.1", repo_name = "build_bazel_rules_apple")
+bazel_dep(name = "apple_support", version = "1.21.1")
+bazel_dep(name = "rules_swift", version = "2.4.0", repo_name = "build_bazel_rules_swift")
+bazel_dep(name = "bazel_skylib", version = "1.7.1")
+bazel_dep(name = "rules_swift_package_manager", version = "1.0.0-rc1")
+
+swift_deps = use_extension(
+    "@rules_swift_package_manager//:extensions.bzl",
+    "swift_deps",
+)
+swift_deps.from_package(
+    resolved = "//:Package.resolved",
+    swift = "//:Package.swift",
+)
+use_repo(
+    swift_deps,
+    "swift_package",
+    "swiftpkg_citadel",
+    "swiftpkg_swift_collections",
+    # The name of the Swift package repositories will be added to this declaration in step 4 after
+    # running `bazel mod tidy`.
+    # NOTE: The name of the Bazel external repository for a Swift package is `swiftpkg_xxx` where
+    # `xxx` is the Swift package identity, lowercase, with punctuation replaced by `hyphen`. For
+    # example, the repository name for apple/swift-nio is `swiftpkg_swift_nio`.
+)
